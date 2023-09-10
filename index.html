@@ -9,19 +9,27 @@
 </head>
 <body>
 
-    <div class="menu">
-        <ul>
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
-        </ul>
-    </div>
+    <!--- Wrapped this in a <nav> element (Semantic change)-->
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="https://google.com">Google</a></li>
+            </ul>
+        </div>
+    </nav>
+    
 
-    <div class="hero">
-        <h1>Personal Budget</h1>
-        <h2>A personal-budget management app</h2>
-    </div>
+    <!--- Wrapped this in a <header> element (Semantic change)-->
+    <header>
+        <div class="hero">
+            <h1>Personal Budget</h1>
+            <h2>A personal-budget management app</h2>
+        </div>
+    </header>
+    
 
     <div class="container center">
 
@@ -95,11 +103,15 @@
 
     </div>
 
-    <div class="bottom">
-        <div class="center">
-            All rights reserved &copy; Fabio Nolasco
+    <!-- Wrapped this in a <footer> element (Semantic change)-->
+    <footer>
+        <div class="bottom">
+            <div class="center">
+                All rights reserved &copy; Yashaswini Golla
+            </div>
         </div>
-    </div>
+    </footer>
+    
 
 </body>
 </html>
