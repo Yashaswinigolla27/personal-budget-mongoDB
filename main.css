@@ -74,6 +74,8 @@ div.hero h2 {
 }
 
 .bottom {
+    align-content: center;
+    position: center bottom;
     height: 50px;
     background-color: #b4c6f0;
     padding: 40px;
