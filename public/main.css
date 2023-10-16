@@ -40,7 +40,7 @@ div.menu ul li a:hover  {
 div.hero {
     height: 350px;
     background-color: #b4c6f0;
-    background-image: url('/bg.png');
+    background-image: url('bg.png');
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -48,7 +48,7 @@ div.hero {
 }
 
 div.hero h1,
-div.hero h2 {
+div.hero h3 {
     text-align: center;
     margin: 0;
 }
@@ -59,7 +59,7 @@ div.hero h1 {
     margin-bottom: 20px;
 }
 
-div.hero h2 {
+div.hero h3 {
     color: #4d5791;
 }
 

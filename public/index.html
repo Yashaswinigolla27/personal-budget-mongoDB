@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--- This is an SEO change-->
-    <title>Personal Budget Management - Track your expenses time to time</title>
+    <title>Personal Budget Management- Track your expenses time to time</title>
     <!-- This is an SEO change-->
     <meta name = "description" content = "Effectively handle your personal budget with our budget tracking app. Monitor expenses, get alerts, and work towards your financial goals. Our app is cost-free and prioritizes your data privacy.">
     <link rel="stylesheet" href="/reset.css">
@@ -48,9 +48,9 @@
     <!--- Wrapped this in a <header> element (Semantic change)-->
     <header>
         <div class="hero">
-            <h1>Personal Budget</h1>
+            <h1 id="myH1">Personal Budget - MongoDB</h1>
             <!---This is an SEO change-->
-            <h3>We help you track your expenses...FOR FREEE!!!</h3>
+            <h3 onclick="changeTitle()">We help you track your expenses...FOR FREEE!!!</h3>
         </div>
     </header>
     
@@ -89,7 +89,7 @@
     
             <div class="text-box">
                 <!-- This is an A11y change-->
-                <h2>Free</h2>
+                <h2>Chart</h2>
                 <p>
                     <canvas id="myChart" width="400" height="400"></canvas>
                     
@@ -139,19 +139,7 @@
                 ],
             }],
 
-<<<<<<< HEAD
-        labels: [
-            'Eat out',
-            'Rent',
-            'Car',
-            'Groceries',
-            'Utilities',
-            'Entertainment',
-            'Shopping'
-            ]
-=======
         labels: []
->>>>>>> 6f7fcca (Added D3JS chart)
         };
 
         function createChart() {
@@ -163,7 +151,7 @@
         }
 
         function getBudget() {
-            axios.get('/budget')
+            axios.get('http://localhost:3030/budget')
             .then (function (res) {
                 console.log("Getting data for chart1", res);
                 for (var i = 0; i < res.data.myBudget.length; i++) {
@@ -331,6 +319,12 @@
 
     </script>
     
+    <!-- <script>
+        function changeTitle() {
+            var h1 = document.getElementById('myH1');
+            h1.innerHTML = 'Title changed';
+        }
+    </script> -->
     
 </body>
 </html>
